@@ -1,0 +1,188 @@
+/* Apply a background color to the body */
+body {
+  background-color: #bfe0e8; /* Light Blue background */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: black;
+}
+
+/* Center the container and give some padding */
+div {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ede9e9;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 12px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Input and textarea styling */
+input,
+textarea {
+  width: 85%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(213, 213, 208);
+  border-radius: 4px;
+  border: 2px solid #3c3342;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #333333;
+  opacity: 1;
+}
+input[type="date"] {
+  color: black;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgb(200, 228, 229);
+  border-color: #4ae2b2;
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(177, 160, 193);
+  border-color: 2px solid #9875b6;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button styling */
+button {
+  width: 50%;
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4acee2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Filter panel styling */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #d5d3d9;
+  color: black;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: 2px solid #387cca;
+  box-shadow: 0 5px 12px rgba(62, 63, 64, 0.5);
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(182, 178, 178, 0.2);
+  z-index: 1000;
+}
+
+.modal button {
+  margin-top: 10px;
+}
+
+.modal button:hover {
+  background-color: #357ab7;
+}
+
+/* Task list and item styling */
+.task-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.task-item.completed {
+  background-color: #d4edda; /* Light green for completed tasks */
+}
+
+.task-item button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px);
+}
+
+.task-item button:active {
+  transform: translateY(0);
+}
+
+.search-bar {
+  margin-bottom: 10px;
+  width: 250px;
+}
